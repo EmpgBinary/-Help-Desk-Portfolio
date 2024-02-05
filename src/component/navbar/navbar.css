@@ -1,0 +1,133 @@
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    background-color:white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    
+    
+}
+#updates {
+    color: goldenrod;
+    font-size: 1.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+h1{
+    color: goldenrod;
+}
+
+.nav-links li {
+    margin-right: 20px;
+    cursor: pointer;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    color: goldenrod;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        margin-right: 0;
+        
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}/* navbar.css */
+
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+li:hover {
+  color: #007bff; /* Change to your desired hover color */
+}
+/* Add this to your navbar.css */
+.navbar {
+    /* ... existing styles ... */
+}
+
+.mobile-menu-icon {
+    display: none;
+    /* Hide by default on larger screens */
+    cursor: pointer;
+}
+
+.mobile-menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.mobile-menu-open {
+        display: flex;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        /* Show on smaller screens */
+    }
+}

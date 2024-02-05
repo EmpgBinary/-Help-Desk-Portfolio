@@ -1,0 +1,53 @@
+#contactPage {
+    min-width: calc(100vh - 4rem) ;
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    margin-right: 15%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactPageTitle {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.clientDesc {
+    font-weight: 300;
+    font-size: 1rem;
+}
+.clientImgs {
+    margin: 1rem 0;
+    display: flex;
+}
+.clientImg {
+    object-fit: cover;
+    width: 3%;
+    min-width: 9rem;
+    margin: auto;
+    padding: 0.25rem;
+}
+#clients {
+    padding: 2rem;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .clientImgs {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+
+    .clientImg {
+        margin: 1rem 0;
+    }
+}
